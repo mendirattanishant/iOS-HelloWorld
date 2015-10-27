@@ -15,6 +15,9 @@
 		0F4DD7E51BDF59B3000E7CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DD7E31BDF59B3000E7CC6 /* LaunchScreen.storyboard */; };
 		0F4DD7F01BDF59B3000E7CC6 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DD7EF1BDF59B3000E7CC6 /* HelloWorldTests.m */; };
 		0F4DD7FB1BDF59B3000E7CC6 /* HelloWorldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DD7FA1BDF59B3000E7CC6 /* HelloWorldUITests.m */; };
+		0F4DD80B1BDF5C07000E7CC6 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DD8091BDF5C07000E7CC6 /* HelloWorldViewController.m */; };
+		0F4DD80C1BDF5C07000E7CC6 /* HelloWorldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DD80A1BDF5C07000E7CC6 /* HelloWorldViewController.xib */; };
+		0F4DD80E1BDF645E000E7CC6 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DD80D1BDF645E000E7CC6 /* me.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		0F4DD7F61BDF59B3000E7CC6 /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4DD7FA1BDF59B3000E7CC6 /* HelloWorldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldUITests.m; sourceTree = "<group>"; };
 		0F4DD7FC1BDF59B3000E7CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4DD8081BDF5C07000E7CC6 /* HelloWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
+		0F4DD8091BDF5C07000E7CC6 /* HelloWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; };
+		0F4DD80A1BDF5C07000E7CC6 /* HelloWorldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloWorldViewController.xib; sourceTree = "<group>"; };
+		0F4DD80D1BDF645E000E7CC6 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = me.jpg; path = "../../../../frontend-nanodegree-resume/images/me.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +113,10 @@
 				0F4DD7DB1BDF59B3000E7CC6 /* ViewController.h */,
 				0F4DD7DC1BDF59B3000E7CC6 /* ViewController.m */,
 				0F4DD7DE1BDF59B3000E7CC6 /* Main.storyboard */,
+				0F4DD8081BDF5C07000E7CC6 /* HelloWorldViewController.h */,
+				0F4DD8091BDF5C07000E7CC6 /* HelloWorldViewController.m */,
+				0F4DD80A1BDF5C07000E7CC6 /* HelloWorldViewController.xib */,
+				0F4DD80D1BDF645E000E7CC6 /* me.jpg */,
 				0F4DD7E11BDF59B3000E7CC6 /* Assets.xcassets */,
 				0F4DD7E31BDF59B3000E7CC6 /* LaunchScreen.storyboard */,
 				0F4DD7E61BDF59B3000E7CC6 /* Info.plist */,
@@ -242,6 +253,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4DD80E1BDF645E000E7CC6 /* me.jpg in Resources */,
+				0F4DD80C1BDF5C07000E7CC6 /* HelloWorldViewController.xib in Resources */,
 				0F4DD7E51BDF59B3000E7CC6 /* LaunchScreen.storyboard in Resources */,
 				0F4DD7E21BDF59B3000E7CC6 /* Assets.xcassets in Resources */,
 				0F4DD7E01BDF59B3000E7CC6 /* Main.storyboard in Resources */,
@@ -269,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4DD80B1BDF5C07000E7CC6 /* HelloWorldViewController.m in Sources */,
 				0F4DD7DD1BDF59B3000E7CC6 /* ViewController.m in Sources */,
 				0F4DD7DA1BDF59B3000E7CC6 /* AppDelegate.m in Sources */,
 				0F4DD7D71BDF59B3000E7CC6 /* main.m in Sources */,
@@ -314,6 +328,7 @@
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		0F4DD7E31BDF59B3000E7CC6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -410,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nmendiratta.HelloWorld;
@@ -421,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nmendiratta.HelloWorld;
